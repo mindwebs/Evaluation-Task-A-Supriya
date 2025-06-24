@@ -401,10 +401,10 @@ export default function DtoMaker() {
                                     )}
 
                                     {field.arrayType === "object" && (
-                                        <div className="border rounded-lg p-4 bg-gray-50">
+                                        <div className="border rounded-lg p-4">
                                             <div className="flex items-center justify-between mb-4">
                                                 <Label className="text-sm font-medium">Array Object Fields</Label>
-                                                <Button variant="outline" size="sm" onClick={() => addField(field.nestedFields)}>
+                                                <Button variant="default" className="text-black bg-primary"  size="sm" onClick={() => addField(field.nestedFields)}>
                                                     <Plus className="h-4 w-4 mr-2" />
                                                     Add Field
                                                 </Button>
